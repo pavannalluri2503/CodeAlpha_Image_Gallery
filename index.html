@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Image Gallery</h1>
+
+  <div class="controls">
+    <input type="file" id="upload" accept="image/*" multiple />
+    <input type="text" id="search" placeholder="Search by category..." />
+  </div>
+
+  <div class="filters">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="place">Place</button>
+    <button data-filter="movie">Movie</button>
+    <button data-filter="wallpaper">Wallpaper</button>
+  </div>
+
+  <div class="gallery">
+    <img src="imgs/Miles.jpg" data-category="movie" alt="Miles Morales spider" />
+    <img src="imgs/spider neon.png" data-category="wallpaper" alt="Spider Neon" />
+    <img src="imgs/spider wall.jpg" data-category="wallpaper" alt="Spider Logo" />
+    <img src="imgs/Dalapathi.jpg" data-category="movie" alt="dalapathi rajinikanth" />
+    <img src="imgs/Taj Mahal white.jpg" data-category="place" alt="Taj Mahal" />
+    <img src="imgs/Taj Mahal evng.jpg" data-category="place" alt="Taj Mahal" />
+    <img src="imgs/Salaar 01.png" data-category="movie" alt="salaar prabhas" />
+    <img src="imgs/Salaar 02.png" data-category="movie" alt="salaar prabhas" />
+    <img src="imgs/Salaar 03.png" data-category="movie" alt="salaar prabhas" />
+    <img src="imgs/Salaar 04.png" data-category="movie" alt="salaar prabhas" />
+    <img src="imgs/Salaar 05.png" data-category="movie" alt="salaar prabhas" />
+    <img src="imgs/Salaar 06.png" data-category="movie" alt="salaar prabhas" />
+    <img src="imgs/Salaar 07.png" data-category="movie" alt="salaar prabhas" />
+    <img src="imgs/Salaar 08.png" data-category="movie" alt="salaar prabhas" />
+    <img src="imgs/Salaar 09.png" data-category="movie" alt="salaar prabhas" />
+    <img src="imgs/Salaar 10.png" data-category="movie" alt="salaar prabhas" />
+    <img src="imgs/Salaar 11.png" data-category="movie" alt="salaar prabhas" />
+    <img src="imgs/Animal.png" data-category="movie" alt="Animal" />
+    <img src="imgs/Jersey.jpg" data-category="movie" alt="jersey nani" />
+  </div>
+
+  <div class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" />
+    <a class="download" href="#" download>⬇️ Download</a>
+    <div class="nav">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
